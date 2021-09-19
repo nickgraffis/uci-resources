@@ -47,7 +47,7 @@ Resources here are organized by categories that are ment to mimic the modules th
   * Check out `position: sticky` for futher reading!
 
 ## Useful HotKeys/CLI Commands
-* <key>F12</key>: Open Chrome DevTools (PC)
-* <key>Option + ⌘ + J</key>: Open Chrome DevTools (Mac)
+* `F12`: Open Chrome DevTools (PC)
+* `Option + ⌘ + J`: Open Chrome DevTools (Mac)
 * `cat ~/.ssh/id_rsa.pub | pbcopy`: Copy your SSH key to your clipboard (Mac)
 * `clip < ~/.ssh/id_rsa.pub`: Copy your SSH key to your clipboard (PC)
