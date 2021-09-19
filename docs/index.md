@@ -1,5 +1,5 @@
 # UC Irvine Fall 2021 Full Stack Web Development Bootcamp Resources
-Here are some resources for your success and continued education. If you would like to add your own resources, you can fork this repository, and then under `uci-resources` > `docs` > `index.md`, add your own resources. Then create a pull request!
+Here are some resources for your success and continued education. If you would like to add your own resources, you can fork this repository, and then under `uci-resources` > `docs` > `index.md`, add your own resources. Then create a pull request! [In depth contribution guide](/contributing).
 
 Resources here are organized by categories that are ment to mimic the modules that your working on in class.
 
