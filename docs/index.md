@@ -12,11 +12,25 @@ Resources here are organized by categories that are ment to mimic the modules th
 * [VS Code KeyBindings for MacOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
   * Thanks Vahan! :tada:
 * VS Code Package for previewing HTML, MD files: [link](https://marketplace.visualstudio.com/items?itemName=searKing.preview-vscode)
-### iTerm for MacOS
+### Terminal Tools for MacOS
 * [Download iTerm](https://iterm2.com)
+* [Download OhMyZsh](https://ohmyz.sh)
 
 ### GitHub Pages
 * [Using GitHub Pages](https://youtu.be/P4Mu1t5rIXg)
+
+### GitLab
+* [Create SSH Key](https://docs.gitlab.com/ee/ssh/#generate-an-ssh-key-pair)
+* Keeping up with the latest class book:
+  * [Video Guide](https://youtu.be/5gGuRWH3w-Q)
+  * Go to Gitlab (https://uci.bootcampcontent.com/UCI-Coding-Bootcamp/uci-irv-virt-fsf-pt-09-2021-u-c/-/tree/master). Then copy the SSH url.
+  * Navigate into a good location in your computer:
+  * `cd Desktop && mkdir bootcamp && cd bootcamp`
+  * Clone the repo & navigate to it:
+    * `git clone git@uci.bootcampcontent.com:UCI-Coding-Bootcamp/uci-irv-virt-fsf-pt-09-2021-u-c.git && cd uci-irv-virt-fsf-pt-09-2021-u-c`
+  * You now have access to the class repository!
+  * When you want to get the latest updates to the class repository:
+    * `git pull` 
 
 ## The Terminal & Commandline
 * [Commandline Tools](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line#basic_built-in_terminal_commands)
@@ -43,6 +57,55 @@ Resources here are organized by categories that are ment to mimic the modules th
 * `position`: [W3Schools](https://www.w3schools.com/cssref/pr_class_position.asp)
 * `position`: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
   * Check out `position: sticky` for futher reading!
+### Flexbox
+* [Awesome Video from Wes Bos!](https://www.youtube.com/watch?v=CFgeJq4l1YM&ab_channel=WesBos)
+  * Thanks Awad! :tada:
+* :frog: [Flexbox Froggy!](https://flexboxfroggy.com/)
+* [A flexbox playground](https://nickgraffis.github.io/flex-box-demo/)
+
+### Box Shadow
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
+* :test_tube: [The perfect box shadow](https://tobiasahlin.com/blog/layered-smooth-box-shadows/)
+
+### Border Radius
+```css
+/* The syntax of the first radius allows one to four values */
+/* Radius is set for all 4 sides */
+border-radius: 10px;
+
+/* top-left-and-bottom-right | top-right-and-bottom-left */
+border-radius: 10px 5%;
+
+/* top-left | top-right-and-bottom-left | bottom-right */
+border-radius: 2px 4px 2px;
+
+/* top-left | top-right | bottom-right | bottom-left */
+border-radius: 1px 0 3px 4px;
+
+/* The syntax of the second radius allows one to four values */
+/* (first radius values) / radius */
+border-radius: 10px / 20px;
+
+/* (first radius values) / top-left-and-bottom-right | top-right-and-bottom-left */
+border-radius: 10px 5% / 20px 30px;
+
+/* (first radius values) / top-left | top-right-and-bottom-left | bottom-right */
+border-radius: 10px 5px 2em / 20px 25px 30%;
+
+/* (first radius values) / top-left | top-right | bottom-right | bottom-left */
+border-radius: 10px 5% / 20px 25em 30px 35em;
+
+/* Global values */
+border-radius: inherit;
+border-radius: initial;
+border-radius: revert;
+border-radius: unset;
+```
+
+### CSS Art
+* [Simpsons](https://pattle.github.io/simpsons-in-css/)
+* [CSS Art Challenge](https://alvaromontoro.com/blog/67936/100-days-of-css-illustrations)
+* :jack_o_lantern: [Nick's Pumpkin](https://codepen.io/nickgraffis/pen/OJXvRyJ)
 
 ## Useful HotKeys/CLI Commands
 * `F12`: Open Chrome DevTools (PC)
