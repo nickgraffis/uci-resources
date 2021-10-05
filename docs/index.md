@@ -16,6 +16,9 @@ Resources here are organized by categories that are ment to mimic the modules th
 * [Download iTerm](https://iterm2.com)
 * [Download OhMyZsh](https://ohmyz.sh)
 
+### Design Tools
+* [Figma](https://www.figma.com/)
+
 ### GitHub Pages
 * [Using GitHub Pages](https://youtu.be/P4Mu1t5rIXg)
 
@@ -31,6 +34,9 @@ Resources here are organized by categories that are ment to mimic the modules th
   * You now have access to the class repository!
   * When you want to get the latest updates to the class repository:
     * `git pull` 
+
+### Random Tools
+* [Jeff Goldblum's Lorem Ipsum :wink:](http://jeffsum.com)
 
 ## The Terminal & Commandline
 * [Commandline Tools](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line#basic_built-in_terminal_commands)
@@ -57,6 +63,9 @@ Resources here are organized by categories that are ment to mimic the modules th
 * `position`: [W3Schools](https://www.w3schools.com/cssref/pr_class_position.asp)
 * `position`: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
   * Check out `position: sticky` for futher reading!
+
+### Units
+* [W3 Units Converter](https://www.w3schools.com/cssref/css_units.asp)
 ### Flexbox
 * [Awesome Video from Wes Bos!](https://www.youtube.com/watch?v=CFgeJq4l1YM&ab_channel=WesBos)
   * Thanks Awad! :tada:
@@ -66,6 +75,26 @@ Resources here are organized by categories that are ment to mimic the modules th
 ### Box Shadow
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
 * :test_tube: [The perfect box shadow](https://tobiasahlin.com/blog/layered-smooth-box-shadows/)
+
+### Attribute Selectors
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+  * Thanks Runa! :tada:
+```css
+a[href$=".css"]::after {
+  content: "👨‍✈️";
+}
+
+ul li:nth-child(2) a[href$=".css"]::after {
+  content: "👨‍✈️";
+}
+
+ul li:nth-child(3) a[href$=".css"]::after {
+  content: "🧑‍🚀";
+}
+```
+
+### Pseudo-Classes/Elements
+* [Hover Pseudo-Class for Pseudo Elements](http://jsfiddle.net/5WV75/)
 
 ### Border Radius
 ```css
@@ -112,3 +141,23 @@ border-radius: unset;
 * `Option + ⌘ + J`: Open Chrome DevTools (Mac)
 * `cat ~/.ssh/id_rsa.pub | pbcopy`: Copy your SSH key to your clipboard (Mac)
 * `clip < ~/.ssh/id_rsa.pub`: Copy your SSH key to your clipboard (PC)
+
+## JavaScript
+* Generate a random whole number
+```javascript
+Math.floor(Math.random() * 10)
+```
+* [Quara Answer](https://www.quora.com/What-is-the-difference-between-an-operator-and-a-function) - Difference between operators and functions, according to math
+* [JS Operators](https://www.w3schools.com/jsref/jsref_operators.asp)
+* Super deep dive into operators like (+) and how a computer actually adds two numbers together: [JSFiddle](https://jsfiddle.net/L8muvg7r/28/)
+* JS Basics from MDN:
+  * [Functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+  * [Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#instance_methods)
+  * [Objects Part 1](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+  * [Objects Part 2](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects)
+  * [Strings]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#instance_methods)
+  * Thanks Andy! :tada:
+* JS Window Object from MDN:
+  * [Window.prompt](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
+  * [Window.confrim](https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm)
+  * [Window.alert](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
