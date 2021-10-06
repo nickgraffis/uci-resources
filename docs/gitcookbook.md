@@ -76,3 +76,38 @@ git add .
 git commit -m "Resolved merge conflicts"
 git push
 ```
+
+## Change default branch names from `master` to `main`
+Because GitHub is now using the `main` branch name as the default, it would be easiser for us to have our local git use the same default name.
+### Instructions
+1. You can check out your current git configs by running:
+```
+git config --list
+```
+You'll probably get something like this in response: 
+```
+user.name=Nick Graffis
+user.email=nicholasgraffis@gmail.com
+```
+
+2. We want to create a template for our initial git repositories when we create them. GitHub is already doing this when we make repositories on github.
+
+3. Make a directory for our git templates
+```
+mkdir ~/.git-template && cd .git-template
+```
+
+4. Create a file inside called `HEAD` and open it with a default text editor
+```
+touch HEAD && code HEAD
+```
+
+5. Add the following text to the file:
+```
+ref: refs/heads/main
+```
+
+6. Update your config `init.templateDir` to point to our new template
+```
+git config --global init.templateDir ~/.git-template
+```
