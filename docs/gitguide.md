@@ -1,5 +1,8 @@
 # :cat: :octopus: Git Guide
 
+## :man_cook: Git Cookbook Guides
+Check out the [cook book](/gitcookbook) for videos and guides for common issues.
+
 ## `> git init`
 The `init` command creates a new repository in the current directory.
 
