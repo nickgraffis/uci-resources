@@ -1,7 +1,8 @@
 # :man_cook: Git Cookbook Guides
 
 ## Push a new local directory to GitHub
-### Video
+### Video 
+<p></p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/b07d4d7458a749eda600403e71e2ef7e" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 ### Instructions
@@ -34,3 +35,44 @@ git remote add origin <uri copied from github>
 git push --set-upstream origin master
 ```
 
+## Handeling Merge Conflicts
+### Video
+<p></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/342b6cbb16004d5fb29b94cf39f12364" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+### Instructions
+Lets say that someone you are working with has made changes to file A. You, without knowing that they were making changes to file A, have also made changes to file A. Now when you `git push` your changes, you will get an error saying that:
+```
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+1. Fix this by first pulling from the branch you and your teammate are working on
+```
+git pull
+```
+
+2. Take a look at your merge conflicts inside of file A:
+```
+<<<<<<< HEAD
+this is my change
+=======
+this is another change
+>>>>>>> 872659285<random hash that represents the remote commit>
+```
+
+3. Resolve the merge conflicts by deleting the info that you don't want to keep:
+```
+this is another change
+```
+_We kept the remote change here_
+
+4. Now you can add, commit, and push your changes with the conflict resolved
+```
+git add .
+git commit -m "Resolved merge conflicts"
+git push
+```
