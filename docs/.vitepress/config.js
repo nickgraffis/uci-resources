@@ -6,6 +6,8 @@ module.exports = {
     logo: 'https://brand.uci.edu/wp-content/uploads/BCeater-right-1024x555.png',
     nav: [
       { text: 'GitLab', link: 'https://uci.bootcampcontent.com/UCI-Coding-Bootcamp/uci-irv-virt-fsf-pt-09-2021-u-c/-/tree/master' },
+      { text: 'Git Guide', link: '/gitguide' },
+      { text: 'Contribution Guide', link: '/contributing' },
     ],
   }
 }
