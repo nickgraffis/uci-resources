@@ -60,3 +60,8 @@ Create a new branch with the name of new-branch
 
 ## `--force`
 This flag can be added at the end of things like `git push` or `git pull` to force the command to run.
+
+## `> git stash`
+Stash some changes you've made in your current working directory away.
+
+_Use this when you want to save the changes you've made, but you don't want to commit them and you want to pull from another branch first and your getting errors that your branch is not clean_
