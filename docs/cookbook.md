@@ -1,7 +1,3 @@
-## Deploy to Netlify
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://app.yac.com/embed?url=https://yac.com/play/0rYEwA4xo" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
 ## Node JS, NPM, and `require`
 
 An extreamly basic concept of all programming languages is the ability to break up code into modules. A 5,000 line file can be broken up into smaller files called modules, and this makes code easier to read, understand, and maintain. The browser can also use modules to load code dynamically, but this isn't supported in all browsers. So what we want, is a way to write code in several files, and then combine them all into one file. 
