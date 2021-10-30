@@ -101,10 +101,24 @@
   -o-transform: translateY(-13px) rotate(90deg);
   transform: translateY(-13px) rotate(90deg);
 }
+
+#hamburger-2.is-active .line:nth-child(1){
+  -webkit-transform: translateY(13px);
+  -ms-transform: translateY(13px);
+  -o-transform: translateY(13px);
+  transform: translateY(13px);
+}
+
+#hamburger-2.is-active .line:nth-child(3){
+  -webkit-transform: translateY(-13px);
+  -ms-transform: translateY(-13px);
+  -o-transform: translateY(-13px);
+  transform: translateY(-13px);
+}
 </style>
 
 <div class="mini-container">
-  <div @click="e => e.target.classList.toggle('is-active')" class="hamburger" id="hamburger-1">
+  <div @click="e => e.currentTarget.classList.toggle('is-active')" class="hamburger" id="hamburger-1">
     <span class="line"></span>
     <span class="line"></span>
     <span class="line"></span>
@@ -141,8 +155,6 @@ document.ready(function(){
   background-color: #ecf0f1;
   display: block;
   margin: 8px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -155,22 +167,16 @@ document.ready(function(){
 }
 
 #hamburger-1.is-active .line:nth-child(1){
-  -webkit-transform: translateY(13px) rotate(45deg);
-  -ms-transform: translateY(13px) rotate(45deg);
-  -o-transform: translateY(13px) rotate(45deg);
   transform: translateY(13px) rotate(45deg);
 }
 
 #hamburger-1.is-active .line:nth-child(3){
-  -webkit-transform: translateY(-13px) rotate(-45deg);
-  -ms-transform: translateY(-13px) rotate(-45deg);
-  -o-transform: translateY(-13px) rotate(-45deg);
   transform: translateY(-13px) rotate(-45deg);
 }
 ```
 
 <div class="mini-container">
-  <div @click="e => e.target.classList.toggle('is-active')" class="hamburger" id="hamburger-9">
+  <div @click="e => e.currentTarget.classList.toggle('is-active')" class="hamburger" id="hamburger-9">
     <span class="line"></span>
     <span class="line"></span>
     <span class="line"></span>
@@ -180,23 +186,16 @@ document.ready(function(){
 ```css
 #hamburger-9{
   position: relative;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 #hamburger-9.is-active{
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 #hamburger-9:before{
   content: "";
   position: absolute;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 70px;
   height: 70px;
@@ -204,8 +203,6 @@ document.ready(function(){
   top: calc(50% - 35px);
   left: calc(50% - 35px);
   border-radius: 100%;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -222,17 +219,29 @@ document.ready(function(){
 }
 
 #hamburger-9.is-active .line:nth-child(1){
-  -webkit-transform: translateY(13px);
-  -ms-transform: translateY(13px);
-  -o-transform: translateY(13px);
   transform: translateY(13px);
 }
 
 #hamburger-9.is-active .line:nth-child(3){
-  -webkit-transform: translateY(-13px) rotate(90deg);
-  -ms-transform: translateY(-13px) rotate(90deg);
-  -o-transform: translateY(-13px) rotate(90deg);
   transform: translateY(-13px) rotate(90deg);
+}
+```
+
+<div class="mini-container">
+  <div @click="e => e.currentTarget.classList.toggle('is-active')" class="hamburger" id="hamburger-2">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+</div>
+
+```css
+#hamburger-2.is-active .line:nth-child(1){
+  transform: translateY(13px);
+}
+
+#hamburger-2.is-active .line:nth-child(3){
+  transform: translateY(-13px);
 }
 ```
 </ClientOnly>
