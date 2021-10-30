@@ -58,6 +58,9 @@ Resources here are organized by categories that are ment to mimic the modules th
 * [The importance of Typogoraphy](https://medium.com/free-code-camp/typography-can-make-your-design-or-break-it-7be710aadcfe)
 * [History of Sans Serif](https://www.typotheque.com/articles/a_brief_history_of_sans_serif_typefaces)
 
+
+## Snippits
+
 ## CSS
 * `font-weight`: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
 * `position`: [W3Schools](https://www.w3schools.com/cssref/pr_class_position.asp)
