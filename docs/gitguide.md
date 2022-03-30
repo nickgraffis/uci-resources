@@ -8,10 +8,37 @@ The `init` command creates a new repository in the current directory.
 
 _Use it when you already have a directory you've been working on, and you want to turn it into a git repository._
 
+**Command**
+```
+git init
+```
+
+**Response**
+```
+Reinitialized existing Git repository in /path/to/repo/.git/
+```
 ## `> git status`
 The `status` command shows the status of the current repository. What files are being tracked or not tracked, and what files have been modified or not.
 
 _Use it to determine what is going on inside your git repository._
+
+**Command**
+```
+git status
+```
+
+**Response**
+```
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add file..." to include in what will be committed)
+  index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+```
 
 ## `> git add`
 The `add` command adds files to the staging area. You can add all files in the current directory with `git add .`. Or you can add specific files with `git add file1 file2`.
